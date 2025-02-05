@@ -43,3 +43,10 @@ services:
     networks:
       - internal
 
+volumes:
+  kupipodariday_data:
+
+networks:
+  internal:
+  external:
+
