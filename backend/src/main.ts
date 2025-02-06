@@ -39,6 +39,6 @@ async function bootstrap() {
   app.useGlobalFilters(new EntityNotFoundExceptionFilter());
   app.useGlobalInterceptors(new TypeOrmErrorMapperInterceptor());
 
-  await app.listen(process.env.PORT ?? 3000);
+  await app.listen(process.env.PORT ?? 3005);
 }
 bootstrap();

@@ -1,5 +1,5 @@
-//export const URL = 'https://api.dockerkpd.nomorepartiesco.ru';
-export const URL = 'http://localhost:3005';
+export const URL = 'https://api.dockerkpd.nomorepartiesco.ru';
+//export const URL = 'http://localhost:3005';
 
 export const MINIMUM_PASSWORD_LENGTH = 3;
 export const MINIMUM_USERNAME_LENGTH = 3;
