@@ -3,6 +3,7 @@ module.exports = {
         {
             name: 'backend',
             script: 'dist/main.js',
+            interpreter: 'node',
         },
     ],
 };

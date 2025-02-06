@@ -1,10 +1,4 @@
-import {
-  Body,
-  Controller,
-  Post,
-  UseGuards,
-  UseInterceptors,
-} from '@nestjs/common';
+import { Body, Controller, Post, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { UsersService } from '../users/users.service';
 import { LocalAuthGuard } from './guard/local-auth.guard';
@@ -13,7 +7,6 @@ import { CreateUserDto } from '../users/dto/create-user.dto';
 import { SigninUserDto, SigninUserResponseDto } from './dto/signin-user.dto';
 import { instanceToPlain } from 'class-transformer';
 import { ApiTags } from '@nestjs/swagger';
-import { TypeOrmErrorMapperInterceptor } from '../common/interceptors/TypeOrmErrorMapperInterceptor';
 
 @ApiTags('Authentication')
 @Controller()
