@@ -4,7 +4,7 @@ services:
     build:
       context: frontend
       dockerfile: Dockerfile
-    image: kupipodariday-frontend
+    image: tatyanare/kupipodariday-frontend
     restart: always
     ports:
       - 8080:80
@@ -16,7 +16,7 @@ services:
     build:
       context: backend
       dockerfile: Dockerfile
-    image: kupipodariday-backend
+    image: tatyanare/kupipodariday-backend
     restart: always
     env_file: .env
     ports:
