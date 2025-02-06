@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:docker": "scp .docker-compose.pub.yml .env tatyanare@158.160.33.131:/home/tatyanare"
+    "deploy:docker": "scp docker-compose.pub.yml .env tatyanare@158.160.33.131:/home/tatyanare"
   },
   "eslintConfig": {
     "extends": [

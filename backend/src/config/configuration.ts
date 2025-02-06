@@ -6,13 +6,13 @@ export default () => ({
   },
   database: {
     host: process.env.POSTGRES_HOST,
-    port: parseInt(process.env.POSTGRES_PORT, 10) || 5432,
+    port: parseInt(process.env.POSTGRES_PORT, 10),
     user: process.env.POSTGRES_USER || 'student',
-    password: process.env.POSTGRES_PASSWORD || 'student',
+    password: process.env.POSTGRES_PASSWORD,
     name: process.env.POSTGRES_DB || 'kupipodariday',
   },
   jwt: {
-    secret: process.env.JWT_SECRET || 'secret',
-    ttl: process.env.JWT_TTL || '30000s',
+    secret: process.env.JWT_SECRET,
+    ttl: process.env.JWT_TTL || '50000s',
   },
 });

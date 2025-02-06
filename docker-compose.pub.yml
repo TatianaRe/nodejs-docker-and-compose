@@ -1,16 +1,16 @@
 services:
   frontend:
     container_name: kupipodariday-frontend
-    image: tatyanare/kupipodariday-frontend:1.0.0-alpine
+    image: tatyanare/kupipodariday-frontend:1.0.1-alpine
     restart: always
     ports:
-      - 8080:80
+      - 8081:80
     networks:
       - external
 
   backend:
     container_name: kupipodariday-backend
-    image: tatyanare/kupipodariday-backend:1.0.0-alpine
+    image: tatyanare/kupipodariday-backend:1.0.1-alpine
     restart: always
     env_file: .env
     ports:

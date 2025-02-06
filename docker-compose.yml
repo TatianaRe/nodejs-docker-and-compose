@@ -4,10 +4,10 @@ services:
     build:
       context: frontend
       dockerfile: Dockerfile
-    image: tatyanare/kupipodariday-frontend:1.0.0-alpine
+    image: tatyanare/kupipodariday-frontend:1.0.1-alpine
     restart: always
     ports:
-      - 8080:80
+      - 8081:80
     networks:
       - external
 
@@ -16,7 +16,7 @@ services:
     build:
       context: backend
       dockerfile: Dockerfile
-    image: tatyanare/kupipodariday-backend:1.0.0-alpine
+    image: tatyanare/kupipodariday-backend:1.0.1-alpine
     restart: always
     env_file: .env
     ports:
